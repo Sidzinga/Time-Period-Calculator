@@ -1,0 +1,30 @@
+.content{
+
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+
+.time-periods{
+
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    gap:10px;
+
+
+}
+.dates {
+display: flex;
+gap:10px
+
+}
+
+.results {
+    background-color: aquamarine;
+    width: 200px;
+    padding: 20px;
+}
