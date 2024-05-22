@@ -22,12 +22,20 @@ function getPeriod(){
     // let result = calculateDates(startDate, endDate)
    
 
-
+console.log(startDate + " start date")
 console.log(startTime.length + " start time")
 
+ if(startDate.length < 3){
 
+startDate = [ "2024", '05', "22 "]
+endDate = [ "2024", "05", "22" ]
+
+ }
    let start = startDate.concat(startTime)
    let end = endDate.concat(endTime)
+   let future = false
+
+
 
 
 const s = new Date(...start)
@@ -35,6 +43,8 @@ const e = new Date(...end)
 let difference = s - e
 if(difference < 0 ){
 difference *= -1
+
+future = true
 }
 
 
@@ -55,7 +65,7 @@ let years = Math.floor(days / 365)
 let daysRemaining = days % 365
 let months = 0
 let remainingDays = daysRemaining
-let 
+
 
 
 if(daysRemaining > 31){
