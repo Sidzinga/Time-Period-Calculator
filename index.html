@@ -16,12 +16,14 @@
         
             <div class="dates"><input type="date" id="startdate" />
 
-            <input type="time" id="starttime" /></div>
+            <input type="time" step="1" id="starttime" />
+        
+        </div>
 
 
             <div class="dates"><input type="date" id="enddate" />
 
-            <input type="time" id="endtime" /></div>
+            <input type="time" step="1" id="endtime" /></div>
 
            <button type="submit" id="submit">Submit</button>
         
@@ -29,11 +31,17 @@
 </form>
     <div class="results">
 
-<p id="answer">
+
+
+<p id="year"></p>
+<p id="months"> </p>
+<p id="days"></p>
+<p id="hours"></p>
+<p id="minutes"></p>
+<p id="seconds"></p>
 
 
 
-</p>
     </div>
 
 
@@ -44,7 +52,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
-
+<script src="process.js"></script>
 
 </body>
 </html>

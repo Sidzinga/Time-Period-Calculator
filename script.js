@@ -1,130 +1,139 @@
 
-$("#submit").click(function(e){
-e.preventDefault()
+// $("#submit").click(function(e){
+// e.preventDefault()
 
- let startDate = ($("#startdate").val().split("-"));
+//  let startDate = ($("#startdate").val().split("-"));
 
- let endDate = $("#enddate").val().split("-")
+//  let endDate = $("#enddate").val().split("-")
 
 
 
- let startTime = $("#starttime").val().split(":")
+//  let startTime = $("#starttime").val().split(":")
 
- let endTime = $("#endtime").val().split(":")
+//  let endTime = $("#endtime").val().split(":")
 
- let result = calculateDates(startDate, endDate)
+//  let result = calculateDates(startDate, endDate)
 
-console.log("hello")
 
-if(result.Years >= 1){
+
+// console.log(startTime)
+
+// if(result.Years >= 1){
 
   
 
-  if(result.Years = 1 ){
-    $('#answer').text(`This is a period of ${result.Years} year`)
-  }
+//   if(result.Years = 1 ){
+//     $('#answer').text(`This is a period of ${result.Years} year`)
+//   }
 
-  else {
-      $('#answer').text(`This is a period of ${result.Years} year`)
-  }
+//   else {
+//       $('#answer').text(`This is a period of ${result.Years} year`)
+//   }
   
 
-}
+// }
 
 
-else {
+// else {
 
-  if(result.Years < 1 && result.Months >= 1){
+//   if( result.Months >= 1){
 
-$('#answer').text(`This is a period of ${result.Months} months`)
+// $('#answer').text(`This is a period of ${result.Months} months`)
 
-}
+// }
 
-if(result.Months <=1 && result.Years <= 1 ){
+// if(result.Months < 1  ){
 
-$('#answer').text(`This is a period of ${result.Days} days`)
+//   console.log('hey')
   
-}
+// $('#answer').text(`This is a period of ${result.Days} days`)
+  
+// }
 
-}
-
-
-  });
-
+// }
 
 
-
+//   });
 
 
 
-function calculateDates(start, end){
-
-  let startYear = parseInt(start[0])
-
-  let startMonth = parseInt(start[1])
-
-  let startDay = parseInt(start[2])
 
 
-  let endYear =  parseInt(end[0])
-
-  let endMonth = parseInt(end[1])
-
-  let endDay = parseInt(end[2])
 
 
-let years
+// function calculateDates(start, end){
 
-let months
+//   let startYear = parseInt(start[0])
 
-let days
+//   let startMonth = parseInt(start[1])
+
+//   let startDay = parseInt(start[2])
 
 
-  if(startYear > endYear){
+//   let endYear =  parseInt(end[0])
 
- years =  startYear - endYear
-  }
+//   let endMonth = parseInt(end[1])
 
-  else if(startYear < endYear){
+//   let endDay = parseInt(end[2])
+
+
+// let years
+
+// let months
+
+// let days
+
+
+//   if(startYear > endYear){
+
+//  years =  startYear - endYear
+//   }
+
+//   else if(startYear < endYear){
     
- years = endYear - startYear
-  }
+//  years = endYear - startYear
+//   }
   
 
-  if(startMonth > endMonth){
+//   if(startMonth > endMonth){
 
-  months =  startMonth - endMonth
-     }
+//   months =  startMonth - endMonth
+//      }
    
-     else if(startMonth < endMonth){
+//      else if(startMonth < endMonth){
        
-    months = endMonth - startMonth
-     }
+//     months = endMonth - startMonth
+//      }
 
 
-     if(startDay > endDay){
+//      if(startDay > endDay){
 
-      days =  startDay - endDay
-         }
+//       days =  startDay - endDay
+//          }
        
-         else if(startDay < endDay){
+//          else if(startDay < endDay){
            
-        days = endDay - startDay
-         }
+//         days = endDay - startDay
+//          }
 
 
 
 
-return {
+// return {
   
-  Years:years,
-  Months:months,
-  Days:days
-}
+//   Years:years,
+//   Months:months,
+//   Days:days
+// }
 
 
-}
+// }
 
-function calculateTime(start, end){
+// function calculateTime(start, end){
 
-}
+// }
+
+
+// function getPeriod(){
+
+// }
