@@ -9,7 +9,7 @@ $("#submit").click(function (e) {
 
 function getPeriod(){
 
-
+    $(".results").show()
     let startDate = ($("#startdate").val().split("-"));
 
     let endDate = $("#enddate").val().split("-")
@@ -20,11 +20,6 @@ function getPeriod(){
    
     let endTime = $("#endtime").val().split(":")
    
-    // let result = calculateDates(startDate, endDate)
-   
-
-console.log(startDate + " start date")
-console.log(startTime.length + " start time")
 
  if(startDate.length < 3){
 
@@ -35,9 +30,6 @@ endDate = [ "2024", "05", "22" ]
    let start = startDate.concat(startTime)
    let end = endDate.concat(endTime)
    let future = false
-
-
-
 
 const s = new Date(...start)
 const e = new Date(...end)
