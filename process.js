@@ -1,6 +1,7 @@
 $("#years").hide()
-
-$(".results").click(function (e) { 
+$("#answers").hide()
+$(".results").hide()
+$("#submit").click(function (e) { 
     e.preventDefault();
     getPeriod()
 });
@@ -93,10 +94,10 @@ if(months > 0){
 
 
     if(months === 1){
- $("#months").text(`, ${months} month`)
+ $("#months").text(` ${months} month`)
     }
     else{
-         $("#months").text(`, ${months} months`)
+         $("#months").text(` ${months} months`)
     }
    
 }
@@ -106,10 +107,10 @@ if(remainingDays > 0){
 
 
     if(remainingDays === 1){
- $("#days").text(`, ${remainingDays} day`)
+ $("#days").text(` ${remainingDays} day`)
     }
     else{
-         $("#days").text(`, ${remainingDays} days`)
+         $("#days").text(` ${remainingDays} days`)
     }
    
 }
@@ -118,10 +119,10 @@ if(remainingHours > 0){
 
 
     if(remainingHours === 1){
- $("#hours").text(`, ${remainingHours} hour`)
+ $("#hours").text(` ${remainingHours} hour`)
     }
     else{
-         $("#hours").text(`, ${remainingHours} hours`)
+         $("#hours").text(` ${remainingHours} hours`)
     }
    
 }
@@ -130,10 +131,10 @@ if(remainingMinutes > 0){
 
 
     if(remainingMinutes === 1){
- $("#minutes").text(`, ${remainingMinutes} minute`)
+ $("#minutes").text(` ${remainingMinutes} minute`)
     }
     else{
-         $("#minutes").text(`, ${remainingMinutes} minutes`)
+         $("#minutes").text(` ${remainingMinutes} minutes`)
     }
    
 }
@@ -142,10 +143,10 @@ if(remainingSeconds > 0){
 
 
     if(remainingSeconds === 1){
- $("#seconds").text(`, ${remainingSeconds} second`)
+ $("#seconds").text(` ${remainingSeconds} second`)
     }
     else{
-         $("#seconds").text(`, ${remainingSeconds} seconds`)
+         $("#seconds").text(` ${remainingSeconds} seconds`)
     }
    
 }
